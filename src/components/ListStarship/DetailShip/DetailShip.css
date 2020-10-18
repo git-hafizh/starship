@@ -1,0 +1,39 @@
+.detail-ship{
+    color: #2b2b2b;
+    font-size: 16px;
+    margin: 0 50px;
+}
+
+.row{
+    text-align: left;
+}
+
+.card{
+    margin: 10px 0;
+}
+
+span.title{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    color: #f1f1f1;
+}
+
+p{
+    font-weight: 600;
+    color: #1b1b1b;
+}
+
+.card-header{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.back{
+    margin-top: 20px;
+}
+
+.list{
+    font-size: 12px;
+}
