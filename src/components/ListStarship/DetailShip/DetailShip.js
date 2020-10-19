@@ -27,14 +27,15 @@ const DetailShip = (props) => {
       setDetail(result.data);
 
       let secFilm = result.data.films
-      for (let s = 0; s < secFilm.length; s++) {
-        secFilm[s] = secFilm[s].replace(/http/g, "https");
-      }
-      
       let secPilot = result.data.pilots
-      for (let k = 0; k < secPilot.length; k++) {
-        secPilot[k] = secPilot[k].replace(/http/g, "https");
+
+      function secure(arr){
+        for (let k = 0; k < arr.length; k++) {
+          arr[k] = arr[k].replace(/http/g, "https");
+        }
       }
+
+      secure(secFilm, secPilot)
 
       fncGetResult(secFilm).then((result) => {
         setFilm(result);
